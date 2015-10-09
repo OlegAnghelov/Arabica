@@ -61,17 +61,30 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="Yhv-TK-Nr2"/>
                                 </connections>
                             </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O0S-Ii-87m">
+                                <rect key="frame" x="159" y="354" width="92" height="22"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="92" id="rcw-VO-STh"/>
+                                </constraints>
+                                <state key="normal" title="Filter" image="filter">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="NAb-8M-UIF" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="3Wy-9X-wKd"/>
+                            <constraint firstItem="O0S-Ii-87m" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="139" id="IBg-cV-AWf"/>
                             <constraint firstItem="NAb-8M-UIF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="KeP-Dc-1Og"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="NAb-8M-UIF" secondAttribute="bottom" constant="298" id="Tbe-sX-foE"/>
                             <constraint firstItem="NAb-8M-UIF" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="eCy-be-f9O"/>
+                            <constraint firstItem="O0S-Ii-87m" firstAttribute="top" secondItem="NAb-8M-UIF" secondAttribute="bottom" constant="52" id="myA-Nv-vuk"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="myButton" destination="O0S-Ii-87m" id="Va2-C0-4Qb"/>
                         <outlet property="myCollectionView" destination="NAb-8M-UIF" id="r13-Ci-c62"/>
                     </connections>
                 </viewController>
@@ -80,4 +93,7 @@
             <point key="canvasLocation" x="565" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="filter" width="17" height="18"/>
+    </resources>
 </document>

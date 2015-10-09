@@ -13,6 +13,7 @@
 
 @property (copy, nonatomic) NSArray *dataSource;
 @property (weak, nonatomic) IBOutlet UICollectionView *myCollectionView;
+@property (weak, nonatomic) IBOutlet UIButton *myButton;
 
 
 @end
@@ -23,6 +24,8 @@
     [super viewDidLoad];
     self.dataSource = @[@"first", @"second", @"third"];
     self.view.backgroundColor = [UIColor lightGrayColor];
+
+    [self.myButton setTitleEdgeInsets:UIEdgeInsetsMake(0, 15, 0, 0)];
 }
 
 - (void)viewWillLayoutSubviews {
